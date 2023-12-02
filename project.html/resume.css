@@ -1,0 +1,97 @@
+body{
+    font-family: cursive;
+}
+#container{
+    height: auto;
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#container>div{
+    height: 100%;
+    width: 30%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+#sub_m{
+    background-color: rgb(237, 28, 36, 0.8);
+}
+#sub_l{
+    background-color: rgb(35, 87, 137, 0.8);
+}
+h2{
+    color: aliceblue;
+}
+#sub_l>img{
+    width: 100%;
+}
+#sub_r{
+    background-color: #ff7f11;
+}
+p,ul,u{
+    color: antiquewhite;
+    margin-top:-10px;
+}
+#sub_m>img{
+    width: 40%;
+    margin-left: 100px;
+}
+#sub_r>ul>div{
+    height: 10px;
+    width:90%;
+    background-color: green;
+}
+#inv{
+    background-image: linear-gradient(to right, green, white);
+}
+#footer{
+    height: 100px;
+    width:100%;
+    color: white;
+    font-size: 10px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+#footer>div{
+    height: 100%;
+    width: 30%;
+    border-radius: 50%;
+    background-image: linear-gradient(red,blue, yellow);
+    border: none;
+}
+#footer p{
+    font-size: 15px;
+}
+#sub_r img{
+    width: 30%;
+    margin-left: 100px;
+}
+@media all and (min-width: 330px) and (max-width: 750px)
+{
+    #container{
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+    }
+    #sub_m>img,
+    #sub_r img {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    #sub_l>img,
+    #sub_r img {
+        margin-left: 0;
+    }
+    #container>div {
+        width: 100%; /* Set the width of the cards to 100% */
+    }
+    #sub_m,
+    #sub_l,
+    #sub_r {
+        width: 100%;
+    }
+}
